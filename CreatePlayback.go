@@ -127,7 +127,7 @@ func drill(drillWriter *csv.Writer) {
 			torque += noise(3.0)
 		}
 
-		// Stupid conversion of numbers back into strings since Go's CSV support is like something from the 1960s.
+		// Stupid conversion of numbers back into strings since Go's CSV support is crap from the 60s.
 		data = []string{flToString(holeDepth), flToString(bitPosition), flToString(bitWeight), flToString(flowOut), flToString(hookLoad), flToString(pit1), flToString(pit2), flToString(pit3), flToString(pumpPressure), flToString(spm1), flToString(spm2), flToString(azimuth), flToString(currentDepth), flToString(inclination), flToString(rpm), flToString(torque), flToString(grav), flToString(mag)}
 
 		drillWriter.Write(data)
