@@ -40,7 +40,7 @@ func main() {
 
 	rand.Seed(time.Now().UnixNano()) // Random seed based on RTC in nanoseconds
 
-	file, err := os.Create("FEPlayback.csv") // Output CSV
+	file, err := os.Create("FEPlayback.csv") // Output CSV for FEPlayback Tool
 	checkError("Cannot create file", err)
 	defer file.Close()
 
