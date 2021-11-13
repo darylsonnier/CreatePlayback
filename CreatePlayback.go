@@ -59,7 +59,7 @@ func main() {
 		connection(writer)
 		standNumber += 1
 	}
-	fmt.Println("FEPlayback.csv created from configuration type", xmlConfig.WellType+".")
+	fmt.Println("FEPlayback.csv created from configuration type ", xmlConfig.WellType+".")
 }
 
 func checkError(message string, err error) {
