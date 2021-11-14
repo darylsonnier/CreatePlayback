@@ -41,14 +41,14 @@ func main() {
 	rand.Seed(time.Now().UnixNano()) // Random seed based on RTC in nanoseconds
 
 	file, err := os.Create("FEPlayback.csv") // Output CSV for FEPlayback Tool
-	checkError("Cannot create file", err)
+	checkError("Cannot create file: ", err)
 	defer file.Close()
 
 	writer := csv.NewWriter(file) // CSV writer
 	defer writer.Flush()
 
 	err = writer.Write(header) // error
-	checkError("Cannot write to file", err)
+	checkError("Cannot write to file: ", err)
 
 	fmt.Println("Creating FEPlayback.csv.")
 	drill(writer)
