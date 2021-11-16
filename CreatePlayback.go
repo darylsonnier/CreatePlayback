@@ -16,7 +16,7 @@ var header = []string{"Hole Depth", "Bit Position", "Bit Weight", "Flow Out Perc
 //  XML Configuration
 var xmlConfig XMLConfig
 
-//  Well Constants 
+//  Well Constants
 var standWeight, startDepth, pit1TotalVol, pit2TotalVol, pit3TotalVol, rpmMax, torqueMax, spmMax, bitWeightMax, flowMax, standLength, emptyBlockWeight float64
 var totalStands int
 
